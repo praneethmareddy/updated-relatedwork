@@ -1,0 +1,66 @@
+\documentclass[conference]{IEEEtran}
+
+\title{LLM-Assisted Constraint-Aware Pipeline (CAP) for Scalable and Optimized SFC Placement in Multi-Generation Networks}
+
+\author{ \IEEEauthorblockN{Author 1, Author 2, Author 3, Author 4} \IEEEauthorblockA{Department of Computer Science, University Name, Country\ Email: author1@example.com, author2@example.com, author3@example.com, author4@example.com} }
+
+\begin{document}
+
+\maketitle
+
+\section{Related Work}
+
+Service Function Chaining (SFC) placement has been a critical research area in the domain of next-generation networks, particularly in the context of 5G and beyond. Several studies have explored different aspects of SFC deployment, including computational efficiency, latency minimization, resource allocation, and service continuity. However, existing approaches present opportunities for enhancement, such as improved adaptability to real-time network changes and proactive mechanisms for handling dynamic traffic fluctuations.
+
+Ghaznavi, M. et al. introduced a heuristic-based Distributed Service Function Chaining (DSFC) framework utilizing the Kariz algorithm. Their approach distributed SFC placement decisions across the network, reducing dependency on centralized controllers. This method effectively improved computational efficiency and decision-making; however, incorporating real-time adaptability and traffic forecasting could further enhance its suitability for highly dynamic environments.
+
+A critical aspect of SFC placement is managing latency-sensitive traffic efficiently. Harutyunyan, D. et al. explored end-to-end slice orchestration in 5G networks, formulating multiple Mixed Integer Linear Programming (MILP) models and heuristic approaches for optimal VNF placement. Their study successfully minimized resource costs, bandwidth consumption, and service migration overheads. While MILP-based optimization provided high accuracy, enhancing its scalability for real-time large-scale networks could further improve deployment efficiency.
+
+In another latency-focused study, Harutyunyan, D. et al. proposed an Integer Linear Programming (ILP)-based strategy combined with a heuristic approach to optimize latency and resource utilization. Their method effectively reduced end-to-end latency, making it valuable for delay-sensitive applications. Further exploration into heuristic refinements could strengthen scalability and feasibility for large-scale implementations.
+
+Addressing the challenge of network dynamics, Harutyunyan, D. et al. incorporated user mobility into the SFC placement model using a MILP approach combined with a heuristic method. Their work successfully reduced service disruptions caused by frequent handovers, ensuring efficient resource allocation. Expanding predictive workload fluctuation mechanisms could further enhance adaptability in highly dynamic environments.
+
+Energy efficiency in SFC placement has also been a key research focus. Dalgkitsis, A. et al. introduced SCHE2MA, a reinforcement learning-based framework employing a multi-agent auction mechanism for energy-aware SFC orchestration. Their model significantly reduced the power consumption of Virtual Network Functions (VNFs) while maintaining service performance. Future research optimizing computational efficiency in training deep reinforcement learning models could enable broader real-time applicability.
+
+Bandwidth management plays a crucial role in ensuring efficient network operation. Kawahara, R. et al. proposed an adaptive bandwidth control mechanism to handle long-duration large flows while preserving the performance of latency-sensitive traffic. Their method dynamically adjusted bandwidth allocation based on observed traffic patterns, ensuring fair resource distribution. A broader integration of bandwidth management within a comprehensive SFC placement strategy could enhance service performance across interconnected network services.
+
+In the context of data center optimization, Kamiyama, N. applied an Analytic Hierarchy Process (AHP)-based model to design efficient network topologies. This approach balanced multiple factors, such as cost, reliability, and performance, to optimize data center networks. Expanding the application of AHP-based decision-making for dynamic SFC deployment could provide additional flexibility for evolving network conditions in multi-generation environments.
+
+\subsection{Our Contribution} Our proposed LLM-assisted Constraint-Aware Pipeline (CAP) addresses these challenges by integrating a constraint-aware path selection mechanism with a resource-aware microservice allocator, enabling real-time, adaptive, and automated SFC deployment. Additionally, we incorporate SARIMA-based traffic forecasting to predict workload variations, ensuring proactive resource allocation. By leveraging LLMs for automated configuration generation, our approach reduces deployment overhead while optimizing microservice placement across multi-generation networks. This comprehensive framework offers a scalable, intelligent, and future-proof solution for efficient SFC placement in dynamic network environments.
+
+\section{References}
+
+\begin{thebibliography}{99}
+
+\bibitem{ghaznavi2017distributed} M. Ghaznavi, N. Shahriar, S. Kamali, R. Ahmed, and R. Boutaba,
+"Distributed Service Function Chaining,"
+IEEE Journal on Selected Areas in Communications, vol. 35, no. 11, pp. 2479–2492, Nov. 2017.
+
+\bibitem{kamiyama2010designing} N. Kamiyama,
+"Designing Data Center Networks using Analytic Hierarchy Process,"
+IEEE ICCCN, 2010.
+
+\bibitem{kawahara2009adaptive} R. Kawahara, T. Mori, N. Kamiyama, S. Harada, and H. Hasegawa,
+"Adaptive Bandwidth Control to Handle Long-Duration Large Flows,"
+IEEE ICC, 2009.
+
+\bibitem{dalgkitsis2022sche2ma} A. Dalgkitsis et al.,
+"SCHE2MA: Scalable, Energy-Aware, Multi-Domain Orchestration for Beyond-5G URLLC Services,"
+IEEE Journal, 2022.
+
+\bibitem{harutyunyan2019orchestrating} D. Harutyunyan et al.,
+"Orchestrating End-to-End Slices in 5G Networks,"
+IEEE CNSM, 2019.
+
+\bibitem{latencyaware2019} D. Harutyunyan et al.,
+"Latency-Aware Service Function Chain Placement in 5G Mobile Networks Using ILP,"
+Conference/Journal, 2019.
+
+\bibitem{mobilityaware2020} D. Harutyunyan et al.,
+"Latency and Mobility–Aware Service Function Chain Placement in 5G Networks Using MILP and Heuristic Approach,"
+Conference/Journal, 2020.
+
+\end{thebibliography}
+
+\end{document}
+
