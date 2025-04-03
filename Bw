@@ -1,0 +1,2 @@
+ R. Kawahara et al. proposed an adaptive bandwidth control mechanism to ensure efficient traffic management, particularly in handling long-duration large flows without degrading the performance of short-duration latency-sensitive flows. Their dynamic bandwidth allocation strategy helped maintain fair resource distribution while preventing congestion. Building on such strategies, integrating SFC-aware bandwidth control can optimize microservice placement by considering traffic conditions and prioritizing short-duration flows when necessary.
+
